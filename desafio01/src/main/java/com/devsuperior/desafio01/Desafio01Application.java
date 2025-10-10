@@ -20,7 +20,7 @@ public class Desafio01Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        Order order = new Order(1020, 150D, 0.2D);
+        Order order = new Order(1034, 150D, 0.2D);
         ShippingService shippingService = new ShippingService();
         OrderService orderService = new OrderService();
 
