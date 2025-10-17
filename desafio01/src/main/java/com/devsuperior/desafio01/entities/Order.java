@@ -27,36 +27,15 @@ public class Order {
         return discount;
     }
 
+    public void setCode(Integer code) {
+        this.code = code;
+    }
 
-    public static final class OrderBuilder {
-        private Integer code;
-        private Double basic;
-        private Double discount;
+    public void setBasic(Double basic) {
+        this.basic = basic;
+    }
 
-        private OrderBuilder() {
-        }
-
-        public static OrderBuilder builder() {
-            return new OrderBuilder();
-        }
-
-        public OrderBuilder code(Integer code) {
-            this.code = code;
-            return this;
-        }
-
-        public OrderBuilder basic(Double basic) {
-            this.basic = basic;
-            return this;
-        }
-
-        public OrderBuilder discount(Double discount) {
-            this.discount = discount;
-            return this;
-        }
-
-        public Order build() {
-            return new Order(code, basic, discount);
-        }
+    public void setDiscount(Double discount) {
+        this.discount = discount;
     }
 }
